@@ -14,14 +14,16 @@ export default function Home() {
       <Text key="2" style={styles.eventDate}>
         Segunda, 01 de outubro de 2024
       </Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Nome do participante"
-        placeholderTextColor={"#6B6B6B"}
-      />
-      <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-        <Text style={styles.buttonText}>+</Text>
-      </TouchableOpacity>
+      <View style={styles.form}>
+        <TextInput
+          style={styles.input}
+          placeholder="Nome do participante"
+          placeholderTextColor={"#6B6B6B"}
+        />
+        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+          <Text style={styles.buttonText}>+</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }
