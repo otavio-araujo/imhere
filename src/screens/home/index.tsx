@@ -35,7 +35,9 @@ export default function Home() {
       {
         text: "Remover",
         onPress: () => {
-          console.warn(`O particimante ${name} foi removido.`)
+          setParticipants((prevState) =>
+            prevState.filter((participant) => participant !== name)
+          )
         },
         style: "destructive",
       },
